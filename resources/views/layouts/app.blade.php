@@ -38,6 +38,14 @@
                     <ul class="navbar-nav mr-auto">
 
                     </ul>
+                    <!-- Center of Navbar -->
+
+                    <ul class="navbar-nav">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </form>
+                    </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -73,6 +81,7 @@
                                 </div>
                             </li>
                         @endguest
+
                     </ul>
                 </div>
             </div>
