@@ -46,12 +46,13 @@
 
                             @foreach ($genres as $genre)
 
-                                <div class="form-check">
+                                <div class="form-check mr-auto">
                                     <input class="form-check-input" type="checkbox" name="genres[]" value="{{ $genre->id }}" id="genres">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <label class="form-check-label" for="genres">
                                         {{ $genre->name }}
                                     </label>
                                 </div>
+
 
                             @endforeach
 
@@ -66,7 +67,7 @@
                             <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Description*') }}</label>
 
                             <div class="col-md-6">
-                                <textarea id="description" class="form-control" id="exampleFormControlTextarea1" rows="3" value="{{ old('description') }}"  required autocomplete="new-description"></textarea>
+                                <textarea id="description" class="form-control" id="description" rows="3" value="{{ old('description') }}"  required autocomplete="new-description"></textarea>
 
                                 @error('description')
                                 <span class="invalid-feedback" role="alert">
@@ -89,7 +90,9 @@
                     <label for="cover" class="col-md-4 col-form-label text-md-right">{{ __('Cover Photo') }}</label>
 
                     <div class="col-md-6">
-                        <input id="cover" type="file" class="form-control" name="cover">
+                        <!--<input id="cover" type="file" class="form-control" name="cover"> -->
+                        <input type="file" id="cover" class="custom-file-input" id="cover">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
                     </div>
 
                 </div>
