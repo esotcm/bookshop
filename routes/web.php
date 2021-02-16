@@ -19,4 +19,15 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::group(['middleware' => 'auth'], function(){
+    Route::get('/dashboard', function (){
+        return view('dashboard');
+    })->name('dashboard');
+
+    Route::group(['prefix' => 'user', 'as' => 'user.'], function(){
+        Route::resource('books',App\Http\Controllers\User\BookController::class);
+    });
+});
+
 Route::get('/profile/{user}', [App\Http\Controllers\ProfilesController::class, 'index'])->name('profile.show');
+
