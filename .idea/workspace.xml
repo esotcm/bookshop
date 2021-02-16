@@ -20,13 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab4b027d-39e1-4f31-9e49-2adc08befcc6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/User/Genre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/textarea.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/user/books/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.swp" beforeDir="false" afterPath="$PROJECT_DIR$/.env.swp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/BookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/books/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/books/create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +201,7 @@
       <workItem from="1612954604525" duration="16103000" />
       <workItem from="1613146418202" duration="3682000" />
       <workItem from="1613203701029" duration="12489000" />
-      <workItem from="1613463308632" duration="6534000" />
+      <workItem from="1613463308632" duration="12201000" />
     </task>
     <servers />
   </component>
