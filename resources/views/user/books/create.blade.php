@@ -27,10 +27,24 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="slug" class="col-md-4 col-form-label text-md-right">{{ __('Slug*') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="slug" type="text" class="form-control @error('slug') is-invalid @enderror" name="slug" value="{{ old('slug') }}" required autocomplete="slug" autofocus>
+
+                                @error('slug')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="authors" class="col-md-4 col-form-label text-md-right">{{ __('Authors (comma separated)*') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('authors') is-invalid @enderror" name="email" value="{{ old('authors') }}" required autocomplete="authors">
+                                <input id="authors" type="text" class="form-control @error('authors') is-invalid @enderror" name="authors" value="{{ old('authors') }}" required autocomplete="authors">
 
                                 @error('authors')
                                 <span class="invalid-feedback" role="alert">
@@ -47,7 +61,8 @@
                             @foreach ($genres as $genre)
 
                                 <div class="form-check mr-auto">
-                                    <input class="form-check-input" type="checkbox" name="genres[]" value="{{ $genre->id }}" id="genres">
+                                    <input class="form-check-input" type="checkbox" name="genres[]" value="{{ $genre->id }}" id="genres" @if (in_array($genre->id, old('genres', []))) checked @endif>
+
                                     <label class="form-check-label" for="genres">
                                         {{ $genre->name }}
                                     </label>
@@ -67,7 +82,7 @@
                             <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Description*') }}</label>
 
                             <div class="col-md-6">
-                                <textarea id="description" class="form-control" id="description" rows="3" value="{{ old('description') }}"  required autocomplete="new-description"></textarea>
+                                <textarea id="description" class="form-control" id="description" rows="3" required autocomplete="new-description">{{ old('description') }}</textarea>
 
                                 @error('description')
                                 <span class="invalid-feedback" role="alert">
@@ -81,7 +96,7 @@
                             <label for="price" class="col-md-4 col-form-label text-md-right">{{ __('Price*') }}</label>
 
                             <div class="col-md-6">
-                                <input id="price" type="number" class="form-control" name="price" required autocomplete="new-price">
+                                <input id="price" type="number" class="form-control" name="price" value="{{ old('price') }}" required autocomplete="new-price">
                             </div>
 
                         </div>
@@ -110,4 +125,6 @@
             </div>
         </div>
     </div>
+</div>
 @endsection
+

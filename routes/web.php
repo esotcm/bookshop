@@ -29,5 +29,7 @@ Route::group(['middleware' => 'auth'], function(){
     });
 });
 
+Route::get('user/books/check_slug','BookController@checkSlug')->name('user.books.checkSlug');
+
 Route::get('/profile/{user}', [App\Http\Controllers\ProfilesController::class, 'index'])->name('profile.show');
 

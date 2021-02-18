@@ -5,6 +5,10 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Genre;
+use App\Http\Requests\StoreBookRequest;
+use App\Models\Author;
+use App\Models\Book;
+use \Cviebrock\EloquentSluggable\Services\SlugService;
 
 class BookController extends Controller
 {
@@ -15,7 +19,9 @@ class BookController extends Controller
      */
     public function index()
     {
-        //
+        $books = auth()->user()->books()->get();
+
+        return view('user.books.index', compact('books'));
     }
 
     /**
@@ -36,9 +42,20 @@ class BookController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreBookRequest $request)
     {
-        //
+        $book = auth()->user()->books()->create($request->validated());
+
+        $book->genres()->attach($request->input('genres'));
+
+        $authors = explode(",",$request->input('authors'));
+        foreach ($authors as $authorName){
+            $author = Author::updateOrCreate(['name'=>$authorName]);
+            $book->authors()->attach($author->id);
+        }
+
+        return redirect()->route('user.books.index')
+            ->with('message', 'Book created successfully');
     }
 
     /**
@@ -84,5 +101,12 @@ class BookController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function checkSlug(Request $request)
+    {
+        $slug = SlugService::createSlug(Post::class, 'slug', $request->$title);
+
+        return response()->json(['slug' => $slug]);
     }
 }
