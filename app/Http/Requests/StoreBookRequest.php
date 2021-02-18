@@ -29,6 +29,7 @@ class StoreBookRequest extends FormRequest
             'genres'=>'required|array',
             'description'=>'required',
             'price'=>'required|numeric',
+            'cover'=> 'nullable',
             'slug' => [
                 'required',
                 'alpha_dash',

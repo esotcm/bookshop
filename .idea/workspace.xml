@@ -20,20 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab4b027d-39e1-4f31-9e49-2adc08befcc6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/user/books/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/example-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/example-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/BookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StoreBookRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StoreBookRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_13_130459_create_books_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_13_130459_create_books_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_13_130913_add_fields_to_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_13_130913_add_fields_to_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_18_101752_add_user_id_to_books_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_18_101752_add_user_id_to_books_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/textarea.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/textarea.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/books/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/books/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/books/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/books/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +211,7 @@
       <workItem from="1613146418202" duration="3682000" />
       <workItem from="1613203701029" duration="12489000" />
       <workItem from="1613463308632" duration="14460000" />
-      <workItem from="1613642790787" duration="14050000" />
+      <workItem from="1613642790787" duration="18792000" />
     </task>
     <servers />
   </component>

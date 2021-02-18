@@ -14,8 +14,7 @@
                             {{ session('message') }}
                         </div>
                     @endif
-
-                    {{ __( $user ->name )  }}
+                    
                 </div>
             </div>
         </div>

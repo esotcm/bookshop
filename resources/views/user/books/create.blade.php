@@ -81,7 +81,7 @@
                       <div class="form-group row">
                             <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Description*') }}</label>
 
-                            <div class="col-md-6">
+                       <!--     <div class="col-md-6">
                                 <textarea id="description" class="form-control" id="description" rows="3" required autocomplete="new-description">{{ old('description') }}</textarea>
 
                                 @error('description')
@@ -89,8 +89,17 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                            </div>
-                        </div>
+                            </div>-->
+                          <div class="col-md-6">
+                              <input id="description" type="text" class="form-control @error('description') is-invalid @enderror" name="description" value="{{ old('description') }}" required autocomplete="description" autofocus>
+
+                              @error('description')
+                              <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                              @enderror
+                          </div>
+                      </div>
 
                         <div class="form-group row">
                             <label for="price" class="col-md-4 col-form-label text-md-right">{{ __('Price*') }}</label>

@@ -8,9 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
 {
-    use HasFactory, Sluggable;
+    use HasFactory;
 
     protected $fillable = ['title','slug','description','cover','price','discount', 'user_id'];
+    protected $attributes = [
+        'cover' => 0,
+    ];
 
     public $table = 'books';
 
@@ -28,12 +31,5 @@ class Book extends Model
     {
         return $this->belongsToMany(User::class);
     }
-    public function sluggable()
-    {
-        return[
-            'slug'=>[
-                'source'=>'title'
-            ]
-        ];
-    }
+
 }
