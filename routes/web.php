@@ -26,7 +26,7 @@ Auth::routes();
 
 Route::group(['middleware' => 'auth'], function(){
     Route::resource('roles', RoleController::class);
-    Route::resource('users', UserController::class);
+    Route::resource('user', UserController::class);
     Route::resource('products', BookController::class);
     Route::get('/dashboard', function (){
         return view('dashboard');
