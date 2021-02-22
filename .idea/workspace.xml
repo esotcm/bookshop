@@ -20,7 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab4b027d-39e1-4f31-9e49-2adc08befcc6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/book/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/roles/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/roles/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/roles/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/roles/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/books/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/books/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/example-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/example-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -209,7 +230,7 @@
       <workItem from="1613203701029" duration="12489000" />
       <workItem from="1613463308632" duration="14460000" />
       <workItem from="1613642790787" duration="19387000" />
-      <workItem from="1613734947452" duration="7280000" />
+      <workItem from="1613734947452" duration="6291000" />
     </task>
     <servers />
   </component>
