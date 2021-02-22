@@ -20,30 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab4b027d-39e1-4f31-9e49-2adc08befcc6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/book/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/book/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/book/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/book/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/roles/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/roles/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/roles/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/roles/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/user/books/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/user/books/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/user/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/user/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/user/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/example-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/example-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/BookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StoreBookRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StoreBookRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_13_130913_add_fields_to_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_13_130913_add_fields_to_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_18_101752_add_user_id_to_books_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_18_101752_add_user_id_to_books_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/textarea.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/textarea.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/books/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/books/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/books/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/books/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,8 +162,6 @@
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
       <path value="$PROJECT_DIR$/vendor/cviebrock/eloquent-sluggable" />
-      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
-      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
     </include_path>
   </component>
   <component name="ProjectId" id="1oCwwLit0vpRQbAbROqk2MsqFNZ" />
@@ -189,7 +172,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/book" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/user/books" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -198,15 +181,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pauli\example-app\resources\views\user\books" />
+      <recent name="C:\Users\pauli\example-app\app\Http\Controllers\User" />
+      <recent name="C:\Users\pauli\example-app\resources\views" />
+      <recent name="C:\Users\pauli\example-app\public\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pauli\example-app\resources\views\user\books" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\pauli\example-app\resources\views\book" />
-      <recent name="C:\Users\pauli\example-app\resources\views\roles" />
-      <recent name="C:\Users\pauli\example-app\resources\views\user\books" />
-      <recent name="C:\Users\pauli\example-app\resources\views\user" />
-      <recent name="C:\Users\pauli\example-app\app\Http\Controllers\User" />
     </key>
   </component>
   <component name="RunManager">
@@ -229,8 +211,7 @@
       <workItem from="1613146418202" duration="3682000" />
       <workItem from="1613203701029" duration="12489000" />
       <workItem from="1613463308632" duration="14460000" />
-      <workItem from="1613642790787" duration="19387000" />
-      <workItem from="1613734947452" duration="6291000" />
+      <workItem from="1613642790787" duration="18792000" />
     </task>
     <servers />
   </component>
